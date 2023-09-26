@@ -2,7 +2,7 @@
 
 - **Project Name:** Movie Collection Front-End
 - **Project By:** Bijay Kadariya
-- [**LINK TO GITHUB**]()
+- [**LINK TO GITHUB**](https://github.com/bijaykadariya123/project-4-movieapp-react)
 - [**LINK TO DEPLOYED WEBSITE**]()
 - **List of Technologies used:** JS, Python, Django, React, HTML, CSS, Node, Neon,Bootstrap
 
