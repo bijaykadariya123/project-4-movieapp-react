@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  background-color: black;
+}
+.indexPage{
+  padding:1em;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100vh;
+}
+
+.postIndex img{
+  width: 15em;
+  height: 15em;
+}
+.indexAllItem{
+  padding:1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  margin-top: 42px;
+  overflow-y: auto;
+}
+.carousel img{
+  height: 25em;
+}

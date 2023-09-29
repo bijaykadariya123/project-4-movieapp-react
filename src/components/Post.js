@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom"
 
 function Post ({movie}){
+    const post1={
+        marginTop:'-22px'
+    }
 
-    return <div>
+    return <div className="postIndex">
                 <Link to={`/movie/${movie.id}`}>
                     <img src={movie.image} alt ={movie.name}/>
-                    <h1>{movie.name}</h1>
-                    <h3>{movie.year}</h3>
+                    <h3>{movie.name}</h3>
+                    <h4 style ={post1}>{movie.year}</h4>
                 </Link>
 
             </div>
