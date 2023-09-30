@@ -5,33 +5,334 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvDxte9E6RPxhdzCh2nIV7PYugKdC0bZ4C-ZH2m27O3cZzDqkXXtRlLcFwTeTdQ7tfMKI&usqp=CAU");
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-body{
-  background-color: black;
+
+.postIndex h3, .postIndex h4{
+  font-family: 'Victor Mono', monospace;
+  color:rgba(234, 224, 234, 0.9);
+  font-weight: 900;
 }
+/* Index page */
+.carousel img{
+  height: 27em;
+}
+.titleFeaturMovies{
+  font-family: 'Victor Mono', monospace;
+  color:rgba(200, 190, 200, 0.9);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+.createForm{
+  margin-top: 5em;
+  background-color: rgba(132, 129, 129,0.21);
+  border-radius: 2em;
+  padding: 1em;
+}
+.createForm h3{
+
+  font-family: 'Great Vibes', cursive;
+  font-size: 51px;
+  color:rgba(200, 190, 200, 0.9);
+  }
+  .form-control{
+    font-size: 15px;
+    color:antiquewhite;
+  }
+  .createForm span{
+    font-family: 'Victor Mono', monospace;
+    letter-spacing: .3em;
+    font-size: 2em;
+    font-weight: 900;
+  }
+  
+
 .indexPage{
   padding:1em;
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 100vh;
+  color:rgba(200, 190, 200, 0.9);
 }
+
 
 .postIndex img{
   width: 15em;
   height: 15em;
+  border-radius: 1em;
+  opacity: 90%;
 }
 .indexAllItem{
   padding:1em;
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  margin-top: 42px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 3.2em 0em 2em 0em;
   overflow-y: auto;
 }
-.carousel img{
-  height: 25em;
+
+
+/* SHOW PAGE */
+
+.showPic img{
+  width: 35em;
+  height: 30em;
+  border-radius: 15px;
+  opacity:0.75;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.9)
+}
+.showDescription{
+  font-family: 'Victor Mono', monospace;
+  color:rgb(218, 203, 203);
+  font-weight: 900;
+}
+.showPicDescription{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.homeLink{
+  display: flex;
+  padding:7px;
+  background-color: rgba(132, 129, 129,0.3);
+  font-size: 25px;
+  font-weight: bolder;
+  color:rgb(218, 203, 203);
+}
+
+.description{
+  padding-top: 30px;
+}
+
+.updateMovie{
+  display: flex;
+  justify-content: center; 
+  padding-bottom:20px
+}
+.updateMovie-sub{
+  width: 500px;
+  margin-top: 5em;
+  background-color: rgba(132, 129, 129,0.21);
+  border-radius: 2em;
+  padding: 1em;
+  font-family: 'Victor Mono', monospace;
+  color:rgb(218, 203, 203);
+  font-weight: 900;
+}
+.showPage{
+  background-image: url("https://img.freepik.com/free-vector/open-clapper-board-with-film-strip-background-design_1017-26102.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.updatedeleteButton{
+  font-size: 17px;
+  font-weight: 900;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 425px) and (min-width:150px){
+
+ .leftBarIndex{
+  display:none;
+ }
+
+ .indexPage{
+  display: grid;
+  grid-template-columns: auto;
+  gap:10px;
+  
+ }
+ .createForm{
+  margin-top: 1em;
+  border-radius: 1em;
+}
+.createForm h3{
+
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  }
+  .createForm span{
+    font-family: 'Victor Mono', monospace;
+    letter-spacing: .3em;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  .form-control{
+    font-size: 12px;
+    color:antiquewhite;
+  }
+  .postIndex img{
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+    opacity: 90%;
+  }
+  .indexAllItem{
+    padding:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3.2em 0em 2em 0em;
+    overflow-y: auto;
+  }
+
+  .postIndex h3, .postIndex h4{
+    font-family: 'Victor Mono', monospace;
+    color:rgba(234, 224, 234, 0.9);
+    font-weight: 700;
+    font-size: 15px;
+  }
+  /* SHOWPAGE */
+  .showPicDescription{
+    display: block;
+    padding:5px
+  }
+  .showPic img{
+    height: 15em;
+  }
+  .description{
+    font-size: 20px;
+    padding-top:10px;
+    font-weight: 900;
+  }
+  .updateMovie{
+    margin-top: -20px;
+    padding:10px
+  }
+
+}
+@media only screen and (max-width: 768px) and (min-width:425px){
+
+  .titleFeaturMovies{
+    font-size: 20px;
+  }
+  .createForm h3{
+    font-size: 30px;
+  }
+
+  .createForm span{
+    font-size: 1.2em;
+  }
+.indexPage{
+  padding:1em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  color:rgba(200, 190, 200, 0.9);
+}
+  .postIndex img{
+    width: 15em;
+    height: 15em;
+    border-radius: 1em;
+    opacity: 90%;
+  }
+  .indexAllItem{
+    padding:0.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3.2em 0em 2em 0em;
+    overflow-y: auto;
+  }
+  .postIndex h3, .postIndex h4{
+    font-family: 'Victor Mono', monospace;
+    color:rgba(234, 224, 234, 0.9);
+    font-weight: 700;
+    font-size: 15px;
+  }
+    /* SHOWPAGE */
+    .showPicDescription{
+      display: block;
+      padding:5px
+    }
+    .showPic img{
+      height: 15em;
+    }
+    .description{
+      font-size: 20px;
+      padding-top:20px;
+      font-weight: 900;
+    }
+    .updateMovie{
+      margin-top: -80px;
+      padding:10px
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:768px){
+  .titleFeaturMovies{
+    font-size: 32px;
+  }
+  .createForm h3{
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .createForm span{
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  .postIndex h3, .postIndex h4{
+    font-family: 'Victor Mono', monospace;
+    color:rgba(234, 224, 234, 0.9);
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .indexPage{
+    padding:1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    color:rgba(200, 190, 200, 0.9);
+  }
+  .postIndex img{
+    width: 16em;
+    height: 16em;
+    border-radius: 1em;
+    opacity: 90%;
+  }
+  .indexAllItem{
+    padding:0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3.2em 0em 2em 0em;
+    overflow-y: auto;
+  }
+
+  /* SHOW */
+
+  .showPic img{
+    width: 25em;
+    height: 32em;
+
+  }
+  .showPicDescription{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width:1024px){
+  .postIndex h3, .postIndex h4{
+    font-family: 'Victor Mono', monospace;
+    color:rgba(234, 224, 234, 0.9);
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .indexAllItem{
+    padding:0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 3.2em 0em 2em 0em;
+    overflow-y: auto;
+  }
+  .postIndex img{
+    width: 18em;
+    height: 16em;
+    border-radius: 1em;
+    opacity: 90%;
+  }
 }
